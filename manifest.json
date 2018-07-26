@@ -1,0 +1,21 @@
+{
+    "name": "USA to rest of the world converter",
+    "version": "1.0",
+    "description": "An app that converts from metric to imperial",
+    "permissions": ["declarativeContent", "storage"],
+    "page_action": {
+        "default_popup": "popup.html",
+        "default_icon": {
+            "128": "icon128.png"
+        }
+    },
+    "icons": {
+        "128": "icon128.png"
+    },
+    "background": {
+        "scripts": ["background.js"],
+        "persistent": false
+    },
+    "content_security_policy": "script-src 'self' https://code.jquery.com/jquery-3.3.1.slim.min.js; object-src 'self'",
+    "manifest_version": 2
+}

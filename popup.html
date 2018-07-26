@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- link to our style sheet -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- Bootstrap 4 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+        crossorigin="anonymous">
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- landing page -->
+    <div class="container btn-container d-flex flex-column">
+        <header>
+            <h2>Unit Converter</h2>
+            <p>"Converts Imperial units to metrics and back"</p>
+        </header>
+        <input type="button" value="USA to rest of the world" class="btn btn-info m-2" id="btn-top">
+        <input type="button" value="The rest of the world to USA" class="btn btn-info m-2" id="btn-bot">
+    </div>
+    <!-- imperial to metric -->
+    <div class="container container-top">
+        <div class="input-container d-flex flex-row m-2">
+            <input type="number" class="input" placeholder="miles" name="miles" id="miles1">
+            <span> = </span>
+            <input type="number" class="output" placeholder="kilometer" id="kilometer1" readonly>
+            <span class="mx-1"> km</span>
+        </div>
+        <div class="input-container  d-flex flex-row m-2">
+            <input type="number" class="input" placeholder="inches" name="inches" id="inches1">
+            <span> = </span>
+            <input type="number" class="output" placeholder="centimeter" id="centimeter1" readonly>
+            <span class="mx-1"> cm</span>
+        </div>
+        <div class="input-container d-flex flex-row m-2">
+            <input type="number" class="input" placeholder="feet" name="feet" id="feet1">
+            <span> = </span>
+            <input type="number" class="output" placeholder="meter" id="meter1" readonly>
+            <span class="mx-1"> m</span>
+        </div>
+        <div class="input-container d-flex flex-row m-2">
+            <input type="number" class="input" placeholder="lbs" name="lbs" id="lbs1">
+            <span> = </span>
+            <input type="number" class="output" placeholder="kilograms" id="kilograms1" readonly>
+            <span class="mx-1"> kg</span>
+        </div>
+        <div>
+            <i class="fas fa-arrow-alt-circle-right p-2 my-icon" style="float: right; cursor: pointer;"></i>
+        </div>
+    </div>
+    <!-- metric to imperial -->
+    <div class="container container-bot">
+        <div class="input-container d-flex flex-row m-2">
+            <input type="number" class="input" placeholder="kilometer" name="kilometer" id="kilometer2">
+            <span> = </span>
+            <input type="number" class="output" placeholder="miles" id="miles2" readonly>
+            <span class="mx-1"> mi</span>
+        </div>
+        <div class="input-container d-flex flex-row m-2">
+            <input type="number" class="input" placeholder="centimeter" name="centimeter" id="centimeter2">
+            <span> = </span>
+            <input type="number" class="output" placeholder="inches" id="inches2" readonly>
+            <span class="mx-1"> in</span>
+        </div>
+        <div class="input-container d-flex flex-row m-2">
+            <input type="number" class="input" placeholder="meter" name="meter" id="meter2">
+            <span> = </span>
+            <input type="number" class="output" placeholder="feet" id="feet2" readonly>
+            <span class="mx-1"> ft</span>
+        </div>
+        <div class="input-container d-flex flex-row m-2">
+            <input type="number" class="input" placeholder="kilograms" name="kilograms" id="kilograms2">
+            <span> = </span>
+            <input type="number" class="output" placeholder="lbs" id="lbs2" readonly>
+            <span class="mx-1"> lbs</span>
+        </div>
+        <div>
+            <i class="fas fa-arrow-alt-circle-right p-2 my-icon" style="float: right; cursor: pointer;"></i>
+        </div>
+    </div>
+
+    <footer class="container">
+        <p style="float: right;">Made by Maher Alkendi with <i class="fas fa-heart"></i> and <i class="fas fa-coffee"></i></p>
+    </footer>
+
+    <!-- scripts -->
+    <script src="landing.js"></script>
+    <script src="popuptop.js"></script>
+    <script src="popiobot.js"></script>
+</body>
+
+</html>
